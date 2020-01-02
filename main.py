@@ -61,17 +61,17 @@ def print_config():
         print('graph_title Freebox traffic')
         print('graph_vlabel byte in (-) / out (+) per second')
         print('rate_up.label Up traffic (byte/s)')
-        print('rate_up.draw AREA')
+        print('rate_up.draw LINE1')
         print('rate_up.colour F44336')
-        print('bw_up.label Up bandwidth (byte/s)')
-        print('bw_up.draw LINE')
-        print('bw_up.colour 407DB5')
+#        print('bw_up.label Up bandwidth (byte/s)')
+#        print('bw_up.draw LINE')
+#        print('bw_up.colour 407DB5')
         print('rate_down.label Down traffic (byte/s)')
-        print('rate_down.draw AREA')
+        print('rate_down.draw LINE1')
         print('rate_down.colour 8BC34A')
-        print('bw_down.label Down bandwidth (byte/s)')
-        print('bw_down.draw LINE')
-        print('bw_down.colour 407DB5')
+#        print('bw_down.label Down bandwidth (byte/s)')
+#        print('bw_down.draw LINE')
+#        print('bw_down.colour 407DB5')
     elif mode == mode_temp:
         print('graph_title Freebox temperature')
         print('graph_vlabel temperature in C')
@@ -158,10 +158,10 @@ def print_config():
         print('graph_title Switch port #{} traffic'.format(switch_index))
         print('graph_vlabel byte in (-) / out (+) per second')
         print('rx_{}.label Up (byte/s)'.format(switch_index))
-        print('rx_{}.draw AREA'.format(switch_index))
+        print('rx_{}.draw LINE1'.format(switch_index))
         print('rx_{}.colour F44336'.format(switch_index))
         print('tx_{}.label Down (byte/s)'.format(switch_index))
-        print('tx_{}.draw AREA'.format(switch_index))
+        print('tx_{}.draw LINE1'.format(switch_index))
         print('tx_{}.colour 8BC34A'.format(switch_index))
     elif mode == mode_df:
         print('graph_title Disk usage in percent')
@@ -535,7 +535,7 @@ def query_rrd_data():
                 value /= 10
 
             # When combining upload+download on the same graph, download should be negative
-            if key in [field_rate_down, field_bw_down, field_tx1, field_tx2, field_tx3, field_tx4]:
+            if key in [field_rate_down, field_tx1, field_tx2, field_tx3, field_tx4]:
                 value *= -1
 
             sums[key] += value

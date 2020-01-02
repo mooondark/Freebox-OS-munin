@@ -2,9 +2,9 @@ from modes import *
 
 # mode_traffic
 field_rate_down = 'rate_down'
-field_bw_down = 'bw_down'
+#field_bw_down = 'bw_down'
 field_rate_up = 'rate_up'
-field_bw_up = 'bw_up'
+#field_bw_up = 'bw_up'
 
 # mode_temp
 field_cpum = 'cpum'
@@ -92,9 +92,9 @@ field_wifi_tx_bytes = 'tx_bytes'
 fields = {
     mode_traffic: [
         field_rate_down,
-        field_bw_down,
+#        field_bw_down,
         field_rate_up,
-        field_bw_up
+#        field_bw_up
     ],
     mode_temp: [
         field_cpum,

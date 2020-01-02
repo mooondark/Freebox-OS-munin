@@ -7,9 +7,9 @@ db_switch = 'switch'
 
 dbs = {
     field_rate_down: db_net,
-    field_bw_down: db_net,
+#    field_bw_down: db_net,
     field_rate_up: db_net,
-    field_bw_up: db_net,
+#    field_bw_up: db_net,
     
     field_cpum: db_temp,
     field_cpub: db_temp,
