@@ -28,7 +28,9 @@ dbs = {
     field_rx3: db_switch,
     field_tx3: db_switch,
     field_rx4: db_switch,
-    field_tx4: db_switch
+    field_tx4: db_switch,
+    field_rx5: db_switch,
+    field_tx5: db_switch
 }
 
 

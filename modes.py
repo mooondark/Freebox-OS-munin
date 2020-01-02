@@ -8,6 +8,7 @@ mode_switch1 = 'freebox-switch1'
 mode_switch2 = 'freebox-switch2'
 mode_switch3 = 'freebox-switch3'
 mode_switch4 = 'freebox-switch4'
+mode_switch5 = 'freebox-switch5'
 mode_switch_bytes = 'freebox-switch-bytes'
 mode_switch_packets = 'freebox-switch-packets'
 mode_switch_stations = 'freebox-switch-stations'
@@ -32,18 +33,22 @@ modes = [
     mode_switch2,
     mode_switch3,
     mode_switch4,
+    mode_switch5,
     mode_switch_bytes + '1',
     mode_switch_bytes + '2',
     mode_switch_bytes + '3',
     mode_switch_bytes + '4',
+    mode_switch_bytes + '5',
     mode_switch_packets + '1',
     mode_switch_packets + '2',
     mode_switch_packets + '3',
     mode_switch_packets + '4',
+    mode_switch_packets + '5',
     mode_switch_stations + '1',
     mode_switch_stations + '2',
     mode_switch_stations + '3',
     mode_switch_stations + '4',
+    mode_switch_stations + '5',
     mode_df,
     mode_hddspin,
     mode_transmission_tasks,

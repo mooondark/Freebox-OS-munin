@@ -38,6 +38,9 @@ field_tx3 = 'tx_3'
 # mode_switch4
 field_rx4 = 'rx_4'
 field_tx4 = 'tx_4'
+# mode_switch5
+field_rx5 = 'rx_5'
+field_tx5 = 'tx_5'
 
 # mode_transmission_tasks
 field_nb_tasks_stopped = 'nb_tasks_stopped'
@@ -131,6 +134,10 @@ fields = {
     mode_switch4: [
         field_rx4,
         field_tx4
+    ],
+    mode_switch5: [
+        field_rx5,
+        field_tx5
     ],
     mode_switch_bytes: [
         field_rx_bytes,
